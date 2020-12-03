@@ -6,4 +6,12 @@ namespace TechReturners.Exercises
     {
 
     }
+
+    public class DomesticCat : ICat
+    {
+        public DomesticCat()
+        {
+
+        }
+    }
 }
