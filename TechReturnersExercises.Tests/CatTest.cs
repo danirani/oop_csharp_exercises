@@ -77,5 +77,33 @@ namespace TechReturners.Tests
             ICat c = new DomesticCat();
             Assert.Equal("Purrrrrrr", c.Eat);
         }
+        
+        
+        [Fact]
+        public void CheckCatAfterEating()
+        {
+            ICat c = new DomesticCat();
+            
+            // fetch a random after=eating string and ensure that the 
+            // result matches a least one of the two valid domestic cat reactions. 
+            
+            string afterEat = c.AfterEat();
+            
+            Assert.True(afterEat == "It will do I suppose" || afterEat == "Purrrrrrr");
+        }
+        
+        [Fact]
+        public void CheckLionAfterEating()
+        {
+            ICat c = new LionCat();
+            Assert.Equal("Roar!!!!", c.AfterEat());
+        }
+        
+        [Fact]
+        public void CheckCheetahAfterEating()
+        {
+            ICat c = new CheetahCat();
+            Assert.Equal("Zzzzzzz", c.AfterEat());
+        }
     }
 }
