@@ -36,9 +36,8 @@ namespace TechReturners.Exercises
 
     public class DomesticCat : Cat
     {
-        public Random random;
-
-
+        Random random;
+        
         public DomesticCat()
         {
             IsAsleep = false;
